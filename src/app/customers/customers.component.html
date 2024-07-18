@@ -1,0 +1,15 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+  <li *ngFor="let index of customers">
+    <div class="max-w-md w-full bg-white shadow-lg rounded-lg overflow-hidden">
+      <div class="p-4">
+        <div class="text-center">
+          <h2 class="text-xl font-bold text-gray-800 mb-2">Cliente {{ index.Name }}</h2>
+          <p class="text-gray-600">Información Cliente. {{ index.Identification }} | ID: {{ index.Email }} </p>
+        </div>
+      </div>
+      <div class="p-4">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">Botón</button>
+      </div>
+    </div>
+  </li>
+</div>
